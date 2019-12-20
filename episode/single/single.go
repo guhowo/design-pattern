@@ -20,40 +20,40 @@ type FinanceBasic interface {
 }
 
 //比如现在要开一个基本业务的网点，只需要实现三种方法
-type BasicBanker struct{}
+type BasicBank struct{}
 
-func (b *BasicBanker) Save() {
+func (b *BasicBank) Save() {
 	fmt.Println("basic  -- Save")
 }
 
-func (b *BasicBanker) Withdraw() {
+func (b *BasicBank) Withdraw() {
 	fmt.Println("basic  -- Withdraw")
 }
 
-func (b *BasicBanker) Transfer() {
+func (b *BasicBank) Transfer() {
 	fmt.Println("basic  -- Transfer")
 }
 
 //此时业务扩张，这个网店要增加金融业务
-type FinanceBanker struct{}
+type FinanceBank struct{}
 
-func (f *FinanceBanker) Finance() {
+func (f *FinanceBank) Finance() {
 	fmt.Println("financial  -- Finance")
 }
 
-func (f *FinanceBanker) Basic() {
+func (f *FinanceBank) Basic() {
 	fmt.Println("financial  -- Basic")
 }
 
 type BankerPlus struct {
-	BasicBanker
-	FinanceBanker
+	BasicBank
+	FinanceBank
 }
 type BankerT struct {
 	Basic
 }
 
-func demo() {
+func Demo() {
 	bp := &BankerPlus{}
 	bp.Save()
 	bp.Withdraw()

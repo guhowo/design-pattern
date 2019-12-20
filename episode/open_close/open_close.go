@@ -32,7 +32,7 @@ type Comprehensive interface {
 	Business()
 }
 
-func demo() {
+func Demo() {
 	b := &BasicBank{}
 	b.Business()
 }
