@@ -1,7 +1,9 @@
-package episode
+package main
 
-import "episode/episode/open_close"
+import (
+	"episode/episode/ioc"
+)
 
 func main() {
-	open_close.Demo()
+	ioc.Demo()
 }
