@@ -35,12 +35,12 @@ func (c *BMW) Run() {
 	fmt.Println("BMW. Run")
 }
 
-func Demo() {
-	benz, bmw := &Benz{}, &BMW{}
-	james, sam := &James{}, &Sam{}
-
-	james.Drive(benz)
-	james.Drive(bmw)
-	sam.Drive(benz)
-	sam.Drive(bmw)
-}
+//func Demo() {
+//	benz, bmw := &Benz{}, &BMW{}
+//	james, sam := &James{}, &Sam{}
+//
+//	james.Drive(benz)
+//	james.Drive(bmw)
+//	sam.Drive(benz)
+//	sam.Drive(bmw)
+//}
