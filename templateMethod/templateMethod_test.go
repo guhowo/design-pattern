@@ -3,6 +3,11 @@ package templateMethod
 import "testing"
 
 func TestDoCook(t *testing.T) {
-	tmt := &CookTomato{}
-	doCook(tmt)
+	tomato := &CookTomato{}
+	doCook(tomato)
+
+	println()
+
+	olive := &CookOlive{}
+	doCook(olive)
 }
