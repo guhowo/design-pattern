@@ -1,4 +1,4 @@
-# Design-pattern
-学习设计模式，光说不练假把式
-用golang练习涉及模式
-ioc 控制反转
+# Chain of Respsonsibility design pattern
+
+责任链模式：创建多个对象，使这些对象一级一级的传递请求，直到某个对象决定处理此请求。我理解的职责链模式是请求会被多个对象处理，这个请求的传递是对象之间传递的，这是责任链区别于观察者的地方。
+观察者也是处理的一对多问题，但是观察者之间互不影响，context或者request是统一发布的，不同的observers得到的都是同一个context，而不是上一个对象处理后的context
